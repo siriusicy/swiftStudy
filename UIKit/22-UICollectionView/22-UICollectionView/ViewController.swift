@@ -23,7 +23,7 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout,  UICo
     
         let collectionView: UICollectionView = UICollectionView.init(frame: self.view.frame, collectionViewLayout: layout)
         
-        collectionView.register(NSClassFromString("UICollectionViewCell"), forCellWithReuseIdentifier: "cellId")
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
         
         self.view.addSubview(collectionView)
         collectionView.dataSource = self
@@ -46,7 +46,7 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout,  UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let tmp = indexPath.row % 3
+        let tmp = indexPath.row % 4
         if tmp == 0 {
             return CGSize.init(width: 50, height: 50)
         } else if tmp == 1 {

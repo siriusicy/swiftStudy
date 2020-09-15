@@ -56,6 +56,10 @@ struct Point3 {
     }
 }
 
+var point3 = Point3(x: 5, y: 6)
+point3.moveBy(x: 1, y: 1)
+print(point3)
+
 
 enum TriStateSwitch {
     case off, low, high

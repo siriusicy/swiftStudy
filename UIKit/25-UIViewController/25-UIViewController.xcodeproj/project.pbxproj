@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		584486BF23975CA300B9F23A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584486BE23975CA300B9F23A /* AppDelegate.swift */; };
-		584486C123975CA300B9F23A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584486C023975CA300B9F23A /* SceneDelegate.swift */; };
 		584486C323975CA300B9F23A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584486C223975CA300B9F23A /* ViewController.swift */; };
 		584486C623975CA300B9F23A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584486C423975CA300B9F23A /* Main.storyboard */; };
 		584486C823975CA500B9F23A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584486C723975CA500B9F23A /* Assets.xcassets */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		584486BB23975CA300B9F23A /* 25-UIViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "25-UIViewController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		584486BE23975CA300B9F23A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		584486C023975CA300B9F23A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		584486C223975CA300B9F23A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		584486C523975CA300B9F23A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		584486C723975CA500B9F23A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				584486BE23975CA300B9F23A /* AppDelegate.swift */,
-				584486C023975CA300B9F23A /* SceneDelegate.swift */,
 				584486C223975CA300B9F23A /* ViewController.swift */,
 				584486EE23975F9600B9F23A /* ViewController2.swift */,
 				584486C423975CA300B9F23A /* Main.storyboard */,
@@ -265,7 +262,6 @@
 				584486C323975CA300B9F23A /* ViewController.swift in Sources */,
 				584486EF23975F9600B9F23A /* ViewController2.swift in Sources */,
 				584486BF23975CA300B9F23A /* AppDelegate.swift in Sources */,
-				584486C123975CA300B9F23A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -441,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73K6MX592W;
 				INFOPLIST_FILE = "25-UIViewController/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73K6MX592W;
 				INFOPLIST_FILE = "25-UIViewController/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

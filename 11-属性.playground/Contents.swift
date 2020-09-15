@@ -61,7 +61,7 @@ square.center = Point(x: 15.0, y: 15.0)
 print(square.origin.x)
 
 class AlternativeRect {
-    var origin = Point()
+    var origin : Point = Point()
     var size = Size()
     var center: Point {
         get {
@@ -74,6 +74,7 @@ class AlternativeRect {
             origin.y = newValue.y - (size.height / 2)
         }
     }
+    
 }
 
 struct Cuboid {
@@ -87,8 +88,8 @@ let fourByFiveByTwo = Cuboid(width: 4.0, height: 5.0, depth: 2.0)
 
 class StepCounter {
     var totalSteps: Int = 0 {
-        willSet(newTotalSteps) { // 默认newValue
-            print("将 totalSteps 的值设置为 \(newTotalSteps)")
+        willSet(new) { // 默认newValue
+            print("将 totalSteps 的值设置为 \(new)")
         }
         didSet {
             if totalSteps > oldValue {
@@ -96,6 +97,7 @@ class StepCounter {
             }
         }
     }
+
 }
 let stepCounter = StepCounter()
 stepCounter.totalSteps = 200
@@ -119,7 +121,11 @@ struct SomeEnumeration {
 class SomeClass {
     static var storedTypeProperty = "Some value."
     static var computedTypeProperty: Int{
-        return 27
+        
+        get{
+            return 27
+        }
+
     }
     class var overrideableComputedTypeProperty: Int {
         return 107

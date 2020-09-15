@@ -21,7 +21,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
         cell.backgroundColor = UIColor.init(red: (CGFloat)(arc4random()%255) / 255, green: (CGFloat)(arc4random()%255) / 255, blue: (CGFloat)(arc4random()%255) / 255, alpha: 1)
-        print(((CGFloat)(arc4random()%255) / 255))
+//        print(((CGFloat)(arc4random()%255) / 255))
 //        cell.backgroundColor = .red
         return cell
     }

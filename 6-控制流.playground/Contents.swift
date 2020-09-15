@@ -12,7 +12,7 @@ for (animalName, legCount) in numberOfLegs {
     print("\(animalName)s have \(legCount) legs")
 }
 
-for index in 1...5 {
+for index in 1..<5 {
     print("\(index) times 5 is \(index * 5)")
 }
 
@@ -36,7 +36,7 @@ for tickMack in stride(from: 0, to: minutes, by: minuteInterval) {
     print(tickMack)
 }
 
-let hours = 12
+let hours = 14
 let hourInterval = 3
 for tickMack in stride(from: 3, to: hours, by: hourInterval) {
     print(tickMack)
@@ -81,7 +81,7 @@ if temperatureInFahrenheit <= 32 {
 temperatureInFahrenheit = 40
 if temperatureInFahrenheit <= 32 {
     print("It is very cold, Consider wearing a scarf.")
-} else if temperatureInFahrenheit >= 86 {
+} else if temperatureInFahrenheit >= 86 && temperatureInFahrenheit < 96 {
     print("It is really warm, Do not forget to wear sunscreen")
 }
 else {

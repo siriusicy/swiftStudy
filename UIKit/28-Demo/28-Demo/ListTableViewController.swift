@@ -16,8 +16,7 @@ class ListTableViewController: UITableViewController {
         super.viewDidLoad()
 
         loadData { (list) in
-            print(list)
-            self.personList = list
+            self.personList = list;
             self.tableView.reloadData()
         }
     }

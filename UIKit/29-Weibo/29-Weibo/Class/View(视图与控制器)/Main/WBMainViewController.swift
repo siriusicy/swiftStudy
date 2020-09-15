@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+//import SVProgressHUD
 
 class WBMainViewController: UITabBarController {
     
@@ -50,14 +50,14 @@ class WBMainViewController: UITabBarController {
         var when = DispatchTime.now()
         
         if n.object != nil {
-            SVProgressHUD.setDefaultMaskType(.gradient)
-            SVProgressHUD.showInfo(withStatus: "用户登录已经超时，需要重新登录")
+//            SVProgressHUD.setDefaultMaskType(.gradient)
+//            SVProgressHUD.showInfo(withStatus: "用户登录已经超时，需要重新登录")
             
             when = DispatchTime.now() + 2
         }
         
         DispatchQueue.main.asyncAfter(deadline: when) {
-            SVProgressHUD.setDefaultMaskType(.clear)
+//            SVProgressHUD.setDefaultMaskType(.clear)
             let nav = UINavigationController.init(rootViewController: WBTestViewController())
             self.present(nav, animated: true, completion: nil)
         }

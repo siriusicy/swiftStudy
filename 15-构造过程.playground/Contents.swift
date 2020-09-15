@@ -40,17 +40,17 @@ print("The default temperature is \(f.temperature) Fahrenheit")
 
 struct Celsius {
     var temperatureInCelsius: Double
-    init(fromFahrenheit fahreneheit: Double) {
+    init(fahreneheit: Double) {
         temperatureInCelsius = (fahreneheit - 32.0) / 1.8
     }
     
-    init(fromKelvin kelvin: Double) {
+    init(kelvin: Double) {
         temperatureInCelsius = kelvin - 273.15
     }
 }
 
-let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
-let freezingPointOfWater = Celsius(fromKelvin: 273.15)
+let boilingPointOfWater = Celsius(fahreneheit :212.0)
+let freezingPointOfWater = Celsius(kelvin :273.15)
 
 struct Color {
     let red, green, blue: Double
@@ -70,21 +70,21 @@ let magenta = Color(red: 1.0, green: 0.0, blue: 1.0)
 let halfGray = Color(white: 0.5)
 
 struct Celsius2 {
-    var temperatureInCelsius: Double
-    init(fromFahrenheit fahreneheit: Double) {
-        temperatureInCelsius = (fahreneheit - 32.0) / 1.8
-    }
-       
-    init(fromKelvin kelvin: Double) {
-        temperatureInCelsius = kelvin - 273.15
-    }
-    
-    init(_ celsius2: Double) {
-        temperatureInCelsius = celsius2
-    }
+    var temperatureInCelsius: Double = 2
+//    init(fromFahrenheit fahreneheit: Double) {
+//        temperatureInCelsius = (fahreneheit - 32.0) / 1.8
+//    }
+//
+//    init(fromKelvin kelvin: Double) {
+//        temperatureInCelsius = kelvin - 273.15
+//    }
+//
+//    init(_ celsius2: Double) {
+//        temperatureInCelsius = celsius2
+//    }
 }
 
-let bodyTemperature = Celsius2(37.0)
+let bodyTemperature = Celsius2()
 
 class SurveyQuestion {
     let text: String

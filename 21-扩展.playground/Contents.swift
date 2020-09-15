@@ -50,8 +50,7 @@ extension Rect {
     }
 }
 
-let centerRect = Rect(center: Point(x: 4.0, y: 4.0),
-size: Size(width: 3.0, height: 3.0))
+let centerRect = Rect(center: Point(x: 4.0, y: 4.0), size: Size(width: 3.0, height: 3.0))
 
 extension Int {
     func repetitions(task:()-> Void){
@@ -75,7 +74,8 @@ someInt.square()
 extension Int {
     subscript(digitIndex: Int) -> Int {
         var decimalBase = 1
-        for _ in 0..<digitIndex {
+        for index in 0...digitIndex {
+            print(index)
             decimalBase *= 10
         }
         return (self / decimalBase) % 10
@@ -108,7 +108,7 @@ extension Int {
     }
 }
 
-func printIntegerKinds(_ numbers: [Int]) {
+func printIntegerKinds(numbers: [Int]) {
     for number in numbers {
         switch number.kind {
         case .negative:
@@ -121,4 +121,4 @@ func printIntegerKinds(_ numbers: [Int]) {
     }
     print("")
 }
-printIntegerKinds([3, 19, -27, 0, -6, 0, 7])
+printIntegerKinds(numbers: [3, 19, -27, 0, -6, 0, 7])

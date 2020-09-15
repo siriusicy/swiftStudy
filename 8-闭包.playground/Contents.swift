@@ -103,6 +103,9 @@ func makeIncrementer(forIncrement amount: Int)-> () -> Int{
 
 let incrementByTen = makeIncrementer(forIncrement: 10)
 
+print(incrementByTen())
+print(incrementByTen())
+
 // 闭包是引用类型
 /*
  上面的例子中，incrementBySeven 和 incrementByTen 都是常量，但是这些常量指向的闭包仍然可以增加其捕获的变量的值。这是因为函数和闭包都是引用类型。
