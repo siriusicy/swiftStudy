@@ -8,9 +8,73 @@ var str = "Hello, playground"
 
 // Array
 var someInts = [Int]()
-print("someInts is of type [Int] with \(someInts.count) items.")
-someInts.append(3)
-someInts = []
+someInts = [20,3,40,5,60]
+
+///Map
+someInts = [20,3,40,5,60]
+let result1 = someInts.map { $0 + 2 }
+print(result1) ///< [22, 5, 42, 7, 62]
+print(someInts) ///< [20, 3, 40, 5, 60]
+
+///Filter
+someInts = [20,3,40,5,60]
+let result2 = someInts.filter { $0%2 == 0 }
+print(result2) ///< [20, 40, 60]
+print(someInts) ///< [20, 3, 40, 5, 60]
+
+///Sort
+someInts = [20,3,40,5,60]
+let result3: () = someInts.sort()
+print(result3) ///< ()
+print(someInts) ///< [3, 5, 20, 40, 60]
+
+someInts = [20,3,40,5,60]
+let result4: () = someInts.sort { $0 > $1 }
+print(result4) ///< ()
+print(someInts) ///< [60, 40, 20, 5, 3]
+
+///Sorted (返回新数组)
+someInts = [20,3,40,5,60]
+let result5 = someInts.sorted()
+print(result5) ///< [3, 5, 20, 40, 60]
+print(someInts) ///< [20, 3, 40, 5, 60]
+
+someInts = [20,3,40,5,60]
+let result6 = someInts.sorted { $0 > $1 }
+print(result6) ///< [60, 40, 20, 5, 3]
+print(someInts) ///< [20, 3, 40, 5, 60]
+
+///RemoveAll
+someInts = [20,3,40,5,60]
+let result7: () = someInts.removeAll { $0%2 == 0 }
+print(result7) ///< ()
+print(someInts) ///< [3, 5]
+
+///prefix — 从头取元素直到条件不成立
+someInts = [20,3,40,5,60]
+let result8 = someInts.prefix{ $0>10 }
+print(result8) ///< [20]
+print(someInts) ///< [20, 3, 40, 5, 60]
+
+///drop — 当条件为真时，丢弃元素；一旦不为真，返回其余的元素
+someInts = [20,3,40,5,60]
+let result9 = someInts.drop{ $0>10 }
+print(result9) ///< [3, 40, 5, 60]
+print(someInts) ///< [20, 3, 40, 5, 60]
+
+///split — “把所有元素分成多个数组
+someInts = [20,3,40,5,60]
+let result10 = someInts.split {
+    $0 == 3
+}
+print(result10) ///< [[20], [40, 5, 60]]
+print(someInts) ///< [20, 3, 40, 5, 60]
+
+
+
+
+
+
 
 var threeeDoubles = Array(repeating: 0.0, count: 3)
 var anotherThreeDoubles = Array(repeating: 2.5, count: 3)
